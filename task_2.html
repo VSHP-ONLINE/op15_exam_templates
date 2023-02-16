@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <title>Посетители в больнице</title>
+  </head>
+  <body>
+    <main class="container">
+      
+      <h1>Посетители в больнице</h1>
+
+      <article class="grid">
+        <input id="visitor_name" type="text" placeholder="ФИО посетителя">
+        <div class="grid">
+          <h2>No палаты</h2>
+          <input id="room_number" type="number" min="1" value="1">
+        </div>
+      </article>
+
+      <div class="grid">
+        <input id="patient_name" type="text" placeholder="ФИО пациента">
+        <button>Добавить</button>
+      </div>
+
+      <h2>В здании</h2>
+      <div id="inside_building">
+
+        <article class="grid" id="visit_3">
+          <div id="time_3">
+            <h4 id="date_visit_3">21.02.22</h4>
+            <h4 id="time_visit_3">13:34:45</h4>
+          </div>
+          <div>
+            <h4 id="visitor_3">Иванов И.И. навещает</h4>
+            <h4 id="patient_3">Иванову А.Г. из 26 палаты</h4>
+          </div>
+          <button id="visit_end_3" class="secondary">Ущел</button>
+        </article>
+        
+      </div>
+
+      <h2>Навещали недавно</h2>
+      <div id="outside_building">
+
+        <article class="grid" id="visit_2">
+          <div id="time_2">
+            <h4 id="date_visit_2">20.02.22</h4>
+            <h4 id="time_visit_2">c 12:31:56</h4>
+            <h4 id="time_end_visit_2">по 13:32:26</h4>
+          </div>
+          <div>
+            <h4 id="visitor_2">Петров И.И. навещал(а)</h4>
+            <h4 id="patient_2">Семенова А.В. из 12 палаты</h4>
+          </div>
+          <button id="visit_delete_2" class="secondary">Убрать</button>
+        </article>
+
+        <article class="grid" id="visit_1">
+          <div id="time_1">
+            <h4 id="date_visit_1">19.02.22</h4>
+            <h4 id="time_visit_1">c 10:12:21</h4>
+            <h4 id="time_end_visit_1">по 11:31:09</h4>
+          </div>
+          <div>
+            <h4 id="visitor_1">Смирнова И.И. навещал(а)</h4>
+            <h4 id="patient_1">Смирнову А.В. из 11 палаты</h4>
+          </div>
+          <button id="visit_delete_1" class="secondary">Убрать</button>
+        </article>
+      </div>
+
+    </main>
+  </body>
+</html>

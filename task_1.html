@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <title>Список покупок</title>
+  </head>
+  <body>
+    <main class="container">
+      
+      <h1>Список покупок</h1>
+
+      <article class="grid">
+    
+        <input type="text" id="product_name" placeholder="Название товара" required>
+        <input type="number" id="product_number" value="1" min="1" required>
+        <button id="submit_product">Добавить</button>
+
+      </article>
+
+      <div id="list">
+
+        <article class="grid" id="product_1">
+          <input type="checkbox" id="product_checkbox_1" value="1" checked>
+          <h4 id="product_name_1">1. Масло - 2 шт.</h4>
+          <button id="product_delete_1" class="secondary">Убрать</button>
+        </article>
+
+        <article class="grid" id="product_2">
+          <input type="checkbox" id="product_checkbox_2" value="1">
+          <h4 id="product_name_2">2. Сыр - 1 шт.</h4>
+          <button id="product_delete_2" class="secondary">Убрать</button>
+        </article>
+
+        <article class="grid" id="product_3">
+          <input type="checkbox" id="product_checkbox_3" value="1">
+          <h4 id="product_name_3">3. Молоко - 1 шт.</h4>
+          <button id="product_delete_3" class="secondary">Убрать</button>
+        </article>
+
+      </div>
+
+      <button id="all_bought_button">Всё купил</button>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <title>Электронный блокнотик</title>
+  </head>
+  <body>
+    <main class="container">
+      
+      <h1>Электронный блокнотик</h1>
+
+      <table>
+        <tbody>
+          <tr id="note_1">
+            <th id="note_text_1">Записка No 1</th>
+            <th id="note_date_1">от 21.03.22</th>
+            <th><button id="note_edit_1">Редактировать</button></th>
+            <th><button id="note_delete_1" class="secondary">Убрать</button></th>
+          </tr>
+          <tr id="note_2">
+            <th id="note_text_2">Записка No 2</th>
+            <th id="note_date_2">от 22.03.22</th>
+            <th><button id="note_edit_2">Редактировать</button></th>
+            <th><button id="note_delete_2" class="secondary">Убрать</button></th>
+          </tr>
+          <tr id="note_3">
+            <th id="note_text_3">Записка No 3</th>
+            <th id="note_date_3">от 24.03.22</th>
+            <th><button id="note_edit_3">Редактировать</button></th>
+            <th><button id="note_delete_3" class="secondary">Убрать</button></th>
+          </tr>
+          <tr id="note_4">
+            <th id="note_text_4">Записка No 4</th>
+            <th id="note_date_4">от 24.03.22</th>
+            <th><button id="note_edit_4">Редактировать</button></th>
+            <th><button id="note_delete_4" class="secondary">Убрать</button></th>
+          </tr>
+          <tr id="note_5">
+            <th id="note_text_5">Записка No 5</th>
+            <th id="note_date_5">от 27.03.22</th>
+            <th><button id="note_edit_5">Редактировать</button></th>
+            <th><button id="note_delete_5" class="secondary">Убрать</button></th>
+          </tr>
+        </tbody>
+      </table>
+
+      <button>Создать новую</button>
+
+      <article>
+        <label><h4>Текст</h4></label>
+        <textarea id="note_text"></textarea>
+        <div class="grid">
+          <h4>Дата</h4>
+          <input id="note_date" type="date">
+          <button id="add_note">Сохранить</button>
+        </div>
+      </article>
+
+    </main>
+  </body>
+</html>

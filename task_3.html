@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <title>Платная автодорога</title>
+  </head>
+  <body>
+    <main class="container">
+      
+      <h1>Платная автодорога</h1>
+
+      <article>
+        <h2>Тип номера</h2>
+        <div class="grid">
+          <input id="rf" type="radio" name="plate_type">
+          <h4>Типовой РФ</h4>
+          <input id="plate_number" type="text" placeholder="A000AA" required>
+          <h4>Регион</h4>
+          <input id="region_number" type="number" placeholder="000" required>
+        </div>
+        <div class="grid">
+          <div class="grid">
+            <input id="other" type="radio" name="plate_type">
+            <h4>Иной</h4>
+          </div>
+          <input id="plate_number" type="text" required>
+        </div>
+        <button id="add_plate">Внести</button>
+      </article>
+
+      <h2>Проехали</h2>
+
+      <table>
+        <tbody>
+          <tr id="plate_4">
+            <th id="date_4">21.02.22</th>
+            <th>в</th>
+            <th id="time_4">13:34:45</th>
+            <th id="plate_type_4">РФ</th>
+            <th id="plate_number_4">В338СС</th>
+            <th id="plate_region_4">69</th>
+            <th><button class="secondary">Убрать</button></th>
+          </tr>
+          <tr id="plate_3">
+            <th id="date_3">21.02.22</th>
+            <th>в</th>
+            <th id="time_3">12:11:21</th>
+            <th id="plate_type_3">РФ</th>
+            <th id="plate_number_3">У491РМ</th>
+            <th id="plate_region_3">69</th>
+            <th><button class="secondary">Убрать</button></th>
+          </tr>
+          <tr id="plate_2">
+            <th id="date_2">21.02.22</th>
+            <th>в</th>
+            <th id="time_2">11:50:52</th>
+            <th id="plate_type_2">РФ</th>
+            <th id="plate_number_2">А221ВС</th>
+            <th id="plate_region_2">69</th>
+            <th><button class="secondary">Убрать</button></th>
+          </tr>
+          <tr id="plate_1">
+            <th id="date_1">21.02.22</th>
+            <th>в</th>
+            <th id="time_1">11:50:52</th>
+            <th id="plate_type_1">И</th>
+            <th id="plate_number_1">TheNumBer1</th>
+            <th id="plate_region_1"></th>
+            <th><button class="secondary">Убрать</button></th>
+          </tr>
+        </tbody>
+      </table>
+    
+    </main>
+  </body>
+</html>

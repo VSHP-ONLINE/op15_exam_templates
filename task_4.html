@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <title>Телефонный справочник</title>
+  </head>
+  <body>
+    <main class="container">
+      
+      <h1>Телефонный справочник</h1>
+
+      <article>
+        <div class="grid">
+          <h4>Фамилия</h4>
+          <input id="last_name" type="text">
+        </div>
+        <div class="grid">
+          <h4>Имя</h4>
+          <input id="first_name" type="text" required>
+        </div>
+        <div class="grid">
+          <h4>Телефон</h4>
+          <input id="telephone" type="tel" placeholder="+7-900-00-00-000" required>
+        </div>
+        <button id="add_to_list">Добавить</button>
+      </article>
+
+      <div class="grid">
+        <button>Все</button>
+        <button>А</button>
+        <button>Е</button>
+        <button>М</button>
+        <button>П</button>
+        <button>Ю</button>
+      </div>
+
+      <table>
+        <tbody>
+          <tr id="person_1">
+            <th id="first_name_1">Александров</th>
+            <th id="last_name_1">Петр</th>
+            <th id="telephone_1">+7-900-00-00-001</th>
+            <th><button id="delete_person_1" class="secondary">Убрать</button></th>
+          </tr>
+          <tr id="person_2">
+            <th id="first_name_2">Евдокимов</th>
+            <th id="last_name_2">Семен</th>
+            <th id="telephone_2">+7-900-00-00-002</th>
+            <th><button id="delete_person_2" class="secondary">Убрать</button></th>
+          </tr>
+          <tr id="person_3">
+            <th id="first_name_3"></th>
+            <th id="last_name_3">Мама</th>
+            <th id="telephone_3">+7-900-00-00-003</th>
+            <th><button id="delete_person_3" class="secondary">Убрать</button></th>
+          </tr>
+          <tr id="person_4">
+            <th id="first_name_4"></th>
+            <th id="last_name_4">Папа</th>
+            <th id="telephone_4">+7-900-00-00-004</th>
+            <th><button id="delete_person_4" class="secondary">Убрать</button></th>
+          </tr>
+          <tr id="person_5">
+            <th id="first_name_5">Юдин</th>
+            <th id="last_name_5">Олег</th>
+            <th id="telephone_5">+7-900-00-00-005</th>
+            <th><button id="delete_person_5" class="secondary">Убрать</button></th>
+          </tr>
+        </tbody>
+      </table>
+
+    </main>
+  </body>
+</html>
